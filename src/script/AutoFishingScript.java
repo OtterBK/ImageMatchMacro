@@ -294,7 +294,7 @@ public class AutoFishingScript extends Script{
 		Thread.sleep(10);
 		robot.keyRelease(KeyEvent.VK_E); //인벤토리 열어
 		Thread.sleep(500);
-		ImagePos signPos = searchImgUsingThread(Main.macroImgFolder + "\\fre.png", similarGap); //표지판 찾아
+		ImagePos signPos = searchImgUsingThread(Main.macroImgFolder + "\\fre.png", similarGap); //화로 찾아
 		if(signPos != null) { //표지판 있으면
 			MyPos startPos = new MyPos(signPos.x + 36, signPos.y ); //시작 위치
 			//다음 칸이 비었는지 확인
